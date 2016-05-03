@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>The Great Gatsby || Digital Library</title>
+    <meta name="description" content="website description" />
+    <meta name="keywords" content="website keywords, website keywords" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="css/foundation.css" />
+    <script type="text/javascript" src="vue.js"></script>
+    <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+    <script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-76166919-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+</head>
+
+
+<body>
+    <header class=" header2">
+        <div class="wrapper">
+            <nav>
+                <a href="#">Log In/Sign Up</a>
+                <a href="index.html">Home</a>
+                <a href="about.html">Community</a>
+                <a href="about.html">About</a>
+
+
+            </nav>
+        </div>
+
+
+    </header>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <div class="div4fondo" align="center" id="appc">
+        <h1>Digital Library</h1>
+
+    </div>
+
+    <div>
+
+        <div class="large-2 columns div1fondo" align="left" id="app">
+            <div id="oculto" style="display:none;">
+                <h5 style="color:#0094ff">
+                    user: {{ message1 }} <br />
+                    email: {{ message2 }}
+                </h5>
+                <input type="submit" value="log out" onclick="mostrar(), ocultar()">
+            </div>
+            <div id="visible">
+                <h3 class="estilo">Sign In</h3>
+                <!--
+                <input v-model="message1">
+                <input v-model="message2">
+                -->
+            <input type="text" size="10" maxlength="30" value="username">
+            <input type="password" value="password">
+            
+
+                <input type="submit" value="Submit" onclick="mostrar(), ocultar()">
+            </div>
+                <br />
+                <h2 class="estilo">OR</h2>
+            
+                <h3 class="estilo">Sign Up</h3>
+
+
+                <form id="form" v-on:submit.prevent="addUser">
+                    <input v-model="newUser.name">
+                    <input v-model="newUser.email">
+                    <input type="submit" value="Add User">
+                </form>
+                <ul class="errors">
+                    <li v-show="!validation.name">Name cannot be empty.</li>
+                    <li v-show="!validation.email">Please provide a valid email address.</li>
+                </ul>
+            
+           
+        </div>
+
+        <div class="large-8 columns div2fondo" align="center">
+
+            <h1>Digital Library</h1>
+            <h4>
+                <a href="https://mx.linkedin.com/in/juan-antonio-olvera-69b8a6112">Juan Antonio Olvera Robles</a>
+                <br />
+                <a href="https://mx.linkedin.com/in/raul-flores-346371119">Raul Flores Miramontes</a>
+            </h4>
+            <br />
+            <br />
+            <h2>
+                The Great Gatsby
+            </h2>
+            <br />
+            <br />
+            <!--
+                Esta es la linea de codigo para poner el visualizador pdf de google
+            -->
+            <iframe src="http://docs.google.com/gview?url=http://www.ibeschool.com/ebook/The-Great-Gatsby.pdf&embedded=true" style="width: 600px; height:888px;" frameborder="0"></iframe>
+            <!--
+                Aqui termina la linea de codigo para poner el visualizador pdf de google
+            -->
+
+            <br />
+            <br />
+            <p>
+                You are currently reading "The Great Gatsby", courtesy of Digital Library!
+            </p>
+            <br />
+            <br />
+        </div>
+
+        <div class="large-2 columns div3fondo" align="right" id="app1">
+            <h3>{{ message3 }}</h3>
+
+             Search for: <input v-model="message3">
+
+            <input type="submit" value="Send"><br>
+            <select name="Genre">
+                <option>Sci Fiction</option>
+                <option>Dramma</option>
+                <option>Classic Literature</option>
+            </select>
+
+        </div>
+
+    </div>
+   
+    
+    
+    <script type="text/javascript">
+        
+        new Vue({
+            el: '#app1',
+            data: {
+                message3: 'Search'
+            }
+           
+        })
+        new Vue({
+            el: '#oculto',
+            data: {
+                message1: 'username',
+                message2:'user@live.com.mx'
+            }
+
+
+        })
+
+        function mostrar() {
+            document.getElementById('oculto').style.display = 'block';
+        }
+        function ocultar() {
+            document.getElementById('visible').style.display = 'none';
+        }
+       
+        (function (i, s, o, g, r, a, m) {
+i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+     (i[r].q = i[r].q || []).push(arguments)
+ }, i[r].l = 1 * new Date(); a = s.createElement(o),
+ m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+ })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    </script>
+    
+</body>
+</html>
+

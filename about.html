@@ -1,0 +1,512 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <title>About</title>
+    <meta name="description" content="website description" />
+    <meta name="keywords" content="website keywords, website keywords" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="css/foundation.css" />
+    <script type="text/javascript" src="vue.js"></script>
+    <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+    <script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-76166919-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+</head>
+
+
+<body>
+    <header class=" header2">
+        <div class="wrapper">
+            <nav>
+                <a href="#">Log In/Sign Up</a>
+                <a href="index.html">Home</a>
+                <a href="#">Community</a>
+                <a href="#">About</a>
+
+
+            </nav>
+        </div>
+
+
+    </header>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <div class="div4fondo" align="center" id="appc">
+
+    </div>
+
+    <div>
+
+        <div class="large-2 columns div1fondo" align="left" id="app">
+            <div id="oculto" style="display:none;">
+                <h5 style="color:#0094ff">
+                    user: {{ message1 }} <br />
+                    email: {{ message2 }}
+                </h5>
+                <input type="submit" value="Log Out" onclick="mostrar(), ocultar(), fill()">
+            </div>
+            <div id="visible">
+                <h3 class="estilo">Sign In</h3>
+                <!--
+                <input v-model="message1">
+                <input v-model="message2">
+                -->
+                <input type="text" size="10" maxlength="30" value="username" id="user1">
+                <input type="password" value="password" id="password1">
+
+
+                <input type="submit" value="Submit" onclick="mostrar(), ocultar(), fill()" id="submit1">
+            </div>
+            <br />
+            <!--
+                    <h2 class="estilo">OR</h2>
+
+                    <h3 class="estilo">Sign Up</h3>
+
+
+                    <form id="form" v-on:submit.prevent="addUser">
+                        <input v-model="newUser.name">
+                        <input v-model="newUser.email">
+                        <input type="submit" value="Add User">
+                    </form>
+                    <ul class="errors">
+                        <li v-show="!validation.name">Name cannot be empty.</li>
+                        <li v-show="!validation.email">Please provide a valid email address.</li>
+                    </ul>
+                -->
+
+        </div>
+
+        <div class="large-8 columns div2fondo" align="justify">
+
+            <h1>Digital Library</h1>
+            <h4>
+                <a href="https://mx.linkedin.com/in/juan-antonio-olvera-69b8a6112">Juan Antonio Olvera Robles</a>
+                <br />
+                <a href="https://mx.linkedin.com/in/raul-flores-346371119">Raul Flores Miramontes</a>
+            </h4>
+            <br />
+            <br />
+            <h4>Acerca de esta página</h4>
+            <div style="background-color:#ffffff">
+                <p>
+                    En esta sección encontrarás información acerca de como se planeó esta página, encontrarás mokups, asi como
+                    las ideas de los conceptos claves de la página, y el perfil de nuestros usuarios, paso a paso  vivirás la
+                    planeación que se realizó, así que espera ver bocetos iniciales que quizás estén muy alejados de lo que es hoy la página.
+                </p>
+                <h4></h4>
+
+
+                <h3>Objetivo Estratégico.</h3>
+                <p class="til">
+                    El objetivo estratégico es proporcionar un espacio en el cual la gente pueda encontrar material de lectura
+                    gratuito y también tener un lugar en el cual subir  material creado por ellos. Todo esto con el fin de fomentar la lectura.
+                </p>
+                <h3>Tareas</h3>
+                <p class="til">Página de inicio para dirigirse al resto de la página web.</p>
+                <p class="til">
+                    Página de creación de cuenta/inicio de sesión.
+                </p>
+                <p class="til">
+                    Página de creación de contenido
+                </p>
+                <p class="til">
+                    Página de búsqueda de contenido/browse library
+                </p>
+                <p class="til">
+                    Página de soporte.
+                </p>
+
+                <h3>Pasos</h3>
+                <ul>
+                    <li>
+                        1.- Seleccione la sección de la página a la que desea acceder.
+                    </li>
+                    <img src="img/pginicio.jpg">
+                    <li>
+                        2.-Creación de cuenta: Seleccionar nombre de usuario, correo, contraseña. Presionar "crear".Inicio de sesión: Ingresar usuario, contraseña y presionar "ingresar".
+                    </li>
+                    <img src="img/sesion.jpg">
+
+                    <li>
+                        3.- Seleccionar "nuevo". Acceder al editor de texto. Comenzar redacción. Seleccionar publicar. B- Seleccionar archivo de texto y subir y publicar.
+                    </li>
+                    <img src="img/filemaker.jpg">
+
+                    <li>4.- Hacer click en la barra del buscador. Ingresar información a buscar. Presionar "buscar". Seleccionar y leer.</li>
+                    <img src="img/opciones.jpg">
+                    <li>5.- Seleccionar el tema en que busca ayuda o enviar un correo a soporte@example.com con la información de su problema.</li>
+                    <img src="img/feedback.jpg">
+
+                </ul>
+                <h3>Costos</h3>
+                <lu>
+                    <font face="arial" size=5>
+                        <li>User investigation and research</li>
+                        <li>Customer consult $500.00MXN</li>
+                        <li>Develop and testing $3000.00MXN</li>
+                        <li>Average $200.00MXN per hour</li>
+                        <li>"Donate" Button.</li>
+                    </font>
+
+
+                </lu>
+
+                <a href="#">Regresar al inicio</a>
+
+                <h2> Primer metodología</h2>
+                <div>
+                    <h2 align="center">"Methodology"</h2>
+                    <h4>Customer Specifications:</h4>
+                    <p>
+                        We talked with our client and got together to define certain basic elements of the web page.
+                        We specified the amount of users, the size of the page, the kind of files to use, and the web page traffic.
+                        Before this, we asked the customer to specify and define by himself, without our influence, what he wanted from the website, the features, the functions, and other details.
+                        After that we gave him a feedback on what we thought could improve his ideas, what was possible to do, how complex or easy the features he asked for were, and an idea of the cost based on the features alone. This is how we got a common agreement and defined the website specifications.
+
+                    </p>
+                    <h4>Feasibility Study::</h4>
+                    <p>
+                        We explained our client the complexity of the features, functions, the time and effort they take to make, and all details of the internal development of the website.
+                        Based on this, our client defined the product's budget, and choose the best relation model between quality-cost-time for this project.
+
+                    </p>
+
+                    <h4>Prototype:</h4>
+                    <p>
+                        For the prototype we draw some quick sketches with the client, and simulated the website in the most simple and inexpensive ways. We received feedback from the customer, and quickly redefined the sketch as many times as needed. An example of the website sketch:
+
+
+                    </p>
+                    <img src=http://imar.spaanjaars.com/Images/Articles/ProductReviews/SketchTools/BalsamiqFinalResultLarge.png height="400" width="400">
+                    <h4>Testing:</h4>
+                    <p>
+                        We explained the client the importance that testing has on making good quality software. Explained how it is important to test thoroughly to avoid 1st day crashes, and website exploits due to untested codding.
+                        The customer understood its importance and agreed to make thorough testing.
+                    </p>
+                    <h4>Internal Methodology:</h4>
+                    <p>
+                        After talking with the client, and obtaining all the relevant information from his part, we started deciding the technical and engineering aspects of the project, such as development type, language to use, compilers, and the project planning for good code. We did not discuss this with the customer, since it is probably complex/unnecesary for them.
+
+                    </p>
+
+                    <a href="#">Regresar al inicio</a>
+                    <h2>Sobre Nosotros</h2>
+                    <h2>Perfil</h2>
+                    <p class="til">
+                        Los  motivos por los cuales elegimos ser equipo es debido a que ya hemos participado de ese modo en otras clase y semestres, entre las materias a mencionar,
+                        participamos juntos en la realización de un proyecto extra en la materia de Organización Computacional, proyecto que debía ser funcional y debía convencer a los jueces
+                        de su utilidad. En dicho proyecto jamás tuvimos una ruptura como equipo a pesar de la dificultades que encontrábamos conforme avanzabamos, así que ya sabemos
+                        que trabajamos bien juntos y bueno, para que reparar una taza si no está rota.
+                    </p>
+                    <h2>Problema</h2>
+                    <h4 class="til">Falta de interés en la lectura y del material para ella</h4>
+                    <p class="til">
+                        Vamos a diseñar una página en la cual las personas puedan encontrar diferentes tipos de materiales de lectura, la cual también ofrece un cuestionario que podría
+                        ayudarle a encontrar el tipo de lectura de su interés, en dicha página, las personas podrán encotrar desde libros y editoriales, hasta audios, novelas, y otros
+                        contenidos creados por la comunidad.
+                    </p>
+                    <h4 class="til">Tener un espacio en el cual publicar textos propios</h4>
+                    <p class="til">
+                        Otra problemática a enfrentar, es la de la falta de un lugar en el que una persona ávida a la escritura independiente, pueda hacer sus propias sus obras y
+                        publicarlas en un lugar donde otras personas puedan leerlo y opinan acerca de ellas.
+                    </p>
+                    <h2>Audiencia</h2>
+                    <p class="til">
+                        Todas las personas que les guste la lectura o no, pero tengan interés en esta, además de aquellas que les gusta escribir y quieren que otras personas lean lo que escriben.
+                    </p>
+                    <h2>Entrevista</h2>
+
+                    <iframe width="854" height="480" src="https://www.youtube.com/embed/Fv8ZR4q91vI" frameborder="0" allowfullscreen></iframe>
+                    <br />
+                    <a href="#">Regresar al inicio</a>
+
+
+
+                    <div align="center"><h1>Persona</h1></div>
+                    <div align="center">
+                        <!--<h4>Archetype Quotes</h4>-->
+                        <h4><!--Define yourself in 1 word:--> "Creative"</h4>
+                        <p><!--Quote:--> "Whatever is done for love always occurs beyond good and evil." - Friedrich Nietzsche</p>
+
+                    </div>
+                    <div class="row">
+                        <div class="small-4 large-4 columns">
+                            <h3>Profile</h3>
+
+                            <ul>
+                                <li>Name: John Smith</li>
+                                <li>Age: 22</li>
+                                <li>Gender: Male</li>
+                                <li>Income: $0.00 / Parents</li>
+                                <li>Occupation: Student</li>
+                                <li>Education: College (Studying)</li>
+                            </ul>
+                        </div>
+                        <div class="small-4 large-4 columns"><h3>Technology Expertise</h3><img src="img/Experience Level.JPG" width="500" height="300"></div>
+                        <div class="small-4 large-4 columns">
+                            <h3>User Experience Goals</h3>
+                            <ul>
+                                <li>
+                                    Freedom of speech
+                                </li>
+                                <li>
+
+                                    Active Community
+                                </li>
+                                <li>
+                                    Critical Criticism/Feedback
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="small-4 large-4 columns">
+                            <h4>Do's</h4>
+                            <ul>
+                                <li>Nice looking User Interface</li>
+                                <li>Ease of access</li>
+                                <li>Secure Accounts</li>
+                            </ul>
+                        </div>
+                        <div class="small-4 large-4 columns">
+
+                            <h4>Dont's</h4>
+                            <ul>
+                                <li>Restricted access</li>
+                                <li>Complicated to use</li>
+                                <li>Bad community</li>
+                            </ul>
+                        </div>
+                        <div class="small-4 large-4 columns">
+                            <h4>Personality</h4>
+                            <img src="img/Personality.JPG">
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="small-4 large-4 columns">
+                            <h3> Referents and Influences</h3><ul>
+                                <li>Interests: Technology, Literature</li>
+                                <li>Activities: Reading, Watching movies, Writing</li>
+                                <li>Recommendations from: Friends and family</li>
+                                <li>Devices: Laptop, PC, smartphone, tablet</li>
+                            </ul>
+                        </div>
+                        <div class="small-4 large-4 columns">
+                            <h4>Apps</h4>
+                            <img src="img/Apps.JPG">
+                        </div>
+                        <div class="small-4 large-4 columns">
+                            <h4>Software</h4>
+                            <img src="img/Software.JPG">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="small-5 large-5 columns">
+                            <h4>Brand & Product Relationship</h4>
+                            <img src="img/Brand.JPG">
+                        </div>
+                        <div class="small-7 large-7 columns">
+                            <h4>Devices</h4>
+                            <img src="img/Devices.JPG">
+                        </div>
+                    </div>
+
+
+                </div>
+                <a href="#">Regresar al inicio</a>
+                <h1>Como evaluamos</h1>
+                <p>
+                    <h5>Evaluation</h5>
+                    <br />
+                    Juan Antonio Olvera Robles
+                    <br />Raul Flores<br /><br />
+
+                    Tarea: Crear una cuenta<br />
+                    Tipo de evaluación: Click<br />
+                    Instrucciones: Preisona donde pondrías tu información<br />
+                    Número de clicks: 4
+                    <br />
+                    Tarea: Subir Contenido<br />
+                    Tipo de evaluación: Navigation Flow<br />
+                    Instrucciones: Presiona donde creas que es necesario para subir un archivo<br />
+                    Resultado: Exitoso
+                    <br />
+                    Tarea: Buscar contenido
+                    Tipo de evaluación: Click
+                    Instrucciones: Encuentra un libro usando el buscador<br />
+                    Número de clicks: 2
+                    <br />
+                </p>
+                <a href="#">Volver al Inicio</a><br /><br />
+                <h1>Visual Design</h1>
+            </div>
+        </div>
+
+
+        <div class="large-2 columns div3fondo" align="right" id="app1">
+            <h3>{{ message3 }}</h3>
+
+            Search for: <input v-model="message3">
+
+            <input type="submit" value="Send"><br>
+            <select name="Genre">
+                <option>Sci Fiction</option>
+                <option>Dramma</option>
+                <option>Classic Literature</option>
+            </select>
+
+        </div>
+
+    </div>
+
+
+    <div class="row">
+
+        <div class="large-2 columns div1fondo" align="center">
+            <h3 class="estilo">Sign In</h3>
+
+            <input type="text" size="10" maxlength="30" value="username">
+
+            <input type="password" value="password">
+            <input type="submit" value="Submit">
+
+            <h2 class="estilo">OR</h2>
+            <h3 class="estilo">Sign Up</h3>
+
+            <input type="text" size="10" maxlength="30" value="username">
+            <input type="text" size="10" maxlength="30" value="email">
+
+            <input type="password" value="password">
+            <input type="submit" value="Submit">
+
+        </div>
+
+        <div class="large-8 columns div2fondo" align="center">
+
+            <h4>
+                <a href="https://mx.linkedin.com/in/juan-antonio-olvera-69b8a6112">Juan Antonio Olvera Robles</a>
+                <br />
+                <a href="https://mx.linkedin.com/in/raul-flores-346371119">Raul Flores Miramontes</a>
+            </h4>
+
+            <h2>
+                The Great Gatsby
+            </h2>
+            <br />
+            <br />
+
+            <iframe src="http://docs.google.com/gview?url=http://www.ibeschool.com/ebook/The-Great-Gatsby.pdf&embedded=true" style="width: 600px; height:888px;" frameborder="0"></iframe>
+
+
+
+
+        </div>
+        <div class="small-1 large-2 columns div3fondo">
+            <h3>Search</h3>
+
+            Introduce el término de búsqueda: <input type="search" name="busqueda">
+            <input type="submit" value="Enviar"><br>
+            <select name="genero">
+                <option>Fantasía</option>
+                <option>Fan Made</option>
+                <option>Drama</option>
+            </select>
+            <!--<img src="img/portada.jpg" class="imgs"><br><br>
+            <img src="img/portada2.jpg" class="imgs"><br><br>
+            <img src="img/portada3.jpg" class="imgs"><br><br>
+            <img src="img/flecha.jpg" class="opaciti40" id="imgs">-->
+
+        </div>
+
+
+
+    </div>
+    <div class="divf" align="center">
+        <br /><br />
+        <div class="divcb" id="azulcielo"></div>
+        <div class="divcb" id="cafebajo"></div>
+        <div class="divcb" id="cafemedio"></div>
+        <div class="divcb" id="cafeoscuro"></div>
+    </div>
+    <div class="div4fondo">
+        <p style="color: white">
+            Seleccionamos esta paleta de colores porque los tonos cafés nos recordaban a una librería, con los muebles de madera y sus estanterías también, para darle un estilo rústico,
+            el tono azul bajo lo elegí porque siento que es el color que la gente lo asocia más con un inicio de sesión, en este tipo de organización quizá sobresalga mucho al alejarse de los tipos de tonos,
+            Pero a la ves siento que facilita su ubicación, en esta tarea he puesto el Sign Up y el Sign In en la misma pestaña, pero creo que quedaría mejor con tan solo el Sing In acomodado de forma vertical como suele suceder en facebook,
+            y solo agregar un botón a un lado en caso de que se desee hacer un Sign Up, otro color que siento que podría quedar y no haría mucho contraste sería talvez un tono de morado claro,
+            para terminar, también podría ser que agreguemos una foto como portada de la página, aquí no se la agrego dado que ninguna de las funciones que mostró son la página de inicio.
+        </p>
+    </div>
+
+
+
+    <script src="jquery-2.2.0.min.js"></script>
+    <script src="app.js"></script>
+    <script type="text/javascript">
+
+        new Vue({
+            el: '#app1',
+            data: {
+                message3: 'Search'
+            }
+
+        })
+        new Vue({
+            el: '#oculto',
+            data: {
+                message1: 'raul',
+                message2: 'raulfm94@gmail.com'
+            }
+
+
+        })
+
+        function mostrar() {
+            document.getElementById('oculto').style.display = 'block';
+        }
+        function ocultar() {
+            document.getElementById('visible').style.display = 'none';
+        }
+        //function fill() {
+        //    var usr1 = null;
+        //    var psw1 = null;
+        //    usr1 = document.getElementById("user1");
+        //    psw1 = document.getElementById("password1");
+        //}
+
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    </script>
+
+    <!--<script>
+        var usr1 = null;
+        var psw1 = null;
+        window.onload = function () {
+            usr1 = document.getElementById("user1");
+            psw1 = document.getElementById("password1");
+            var submiter = document.getElementById("submit1");
+            submiter.onclick = fill;
+        }
+
+        //function fill() {
+        //    usr1.value = usr1.value;
+        //    psw1.value = psw1.value;
+        //}
+    </script>-->
+</body>
+</html>
